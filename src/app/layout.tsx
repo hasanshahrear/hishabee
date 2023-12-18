@@ -1,30 +1,26 @@
-import { Dashboard } from '@/features/dashboard'
-import { GlobalProvider } from '@/providers'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Dashboard } from "@/features/dashboard"
+import { GlobalProvider } from "@/providers"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'Hishabee',
-  description: 'Job Task',
+  title: "Hishabee",
+  description: "Job Task",
 }
 
-type TProps = { 
+type TProps = {
   children: React.ReactNode
 }
 
-export default function RootLayout({
-  children,
-}: TProps) {
+export default function RootLayout({ children }: TProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <GlobalProvider>
-          <Dashboard>
-            {children}
-          </Dashboard>
+          <Dashboard>{children}</Dashboard>
         </GlobalProvider>
       </body>
     </html>
