@@ -7,7 +7,7 @@ import { useRef } from "react"
 
 export function TopBarNavigation() {
   const menu = useRef<any>(null)
-  const { toggle, isToggled } = useNavbarContext()
+  const { toggle } = useNavbarContext()
 
   const items = [
     {
@@ -24,7 +24,6 @@ export function TopBarNavigation() {
     },
   ]
 
-  console.log({ isToggled })
   return (
     <div className="h-[70px] bg-white border bottom-1 p-2 flex items-center justify-between px-8">
       <div>

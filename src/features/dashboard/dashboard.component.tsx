@@ -1,3 +1,5 @@
+"use client"
+
 import { CustomDataTable } from "./data-table"
 import { HorizontalBar } from "./horizontal-bar"
 import { PieChart } from "./pie-chart"

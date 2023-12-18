@@ -15,7 +15,7 @@ export function CustomDataTable() {
     fetch("https://dummyjson.com/products/")
       .then((res) => res.json())
       .then((json: Product) => setProducts(json?.products))
-      .catch((error) => console.error("Error searching products:", error))
+      .catch((error) => console.error("Error loading products:", error))
   }, [searchQuery])
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -39,7 +39,7 @@ export function CustomDataTable() {
         />
         <Button
           icon="pi pi-search"
-          className=" bg-teal-500"
+          className=" bg-teal-500 text-white"
           onClick={handleSearch}
         />
         <Button
