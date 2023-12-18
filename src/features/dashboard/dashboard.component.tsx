@@ -1,18 +1,20 @@
-"use client"
+import { CustomDataTable } from "./data-table"
+import { HorizontalBar } from "./horizontal-bar"
+import { PieChart } from "./pie-chart"
 
-import { SidebarNavigation, TopBarNavigation } from "../layout"
-
-type TProps = {
-  children: React.ReactNode
-}
-
-export function Dashboard({ children }: TProps) {
+export function Dashboard() {
   return (
-    <div className="flex h-screen overflow-hidden">
-      <SidebarNavigation />
-      <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-        <TopBarNavigation />
-        <div className="p-5">{children}</div>
+    <div className="container">
+      <div className="grid grid-cols-12 gap-4">
+        <div className="col-span-4">
+          <PieChart />
+        </div>
+        <div className="col-span-8">
+          <HorizontalBar />
+        </div>
+        <div className="col-span-12">
+          <CustomDataTable />
+        </div>
       </div>
     </div>
   )

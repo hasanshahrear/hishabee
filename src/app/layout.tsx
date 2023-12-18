@@ -1,4 +1,4 @@
-import { Dashboard } from "@/features/dashboard"
+import { DashboardLayout } from "@/features/layout"
 import { GlobalProvider } from "@/providers"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -18,9 +18,9 @@ type TProps = {
 export default function RootLayout({ children }: TProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-slate-50`}>
         <GlobalProvider>
-          <Dashboard>{children}</Dashboard>
+          <DashboardLayout>{children}</DashboardLayout>
         </GlobalProvider>
       </body>
     </html>

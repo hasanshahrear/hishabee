@@ -1,3 +1,5 @@
+import { Dashboard } from "@/features/dashboard"
+
 export default function Home() {
-  return <p>test</p>
+  return <Dashboard />
 }
