@@ -36,15 +36,16 @@ export function CustomDataTable() {
           placeholder="Search for products..."
           value={searchQuery}
           onChange={handleInputChange}
+          className="border text-black rounded-lg p-3"
         />
         <Button
           icon="pi pi-search"
-          className=" bg-teal-500 text-white"
+          className=" bg-teal-500 text-white rounded-lg p-3"
           onClick={handleSearch}
         />
         <Button
           icon="pi pi-refresh"
-          className="bg-amber-500 border-none"
+          className="bg-amber-500 border-none text-white rounded-lg p-3"
           onClick={() => setSearchQuery("")}
         />
       </div>

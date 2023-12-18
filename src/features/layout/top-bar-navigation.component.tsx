@@ -30,7 +30,7 @@ export function TopBarNavigation() {
         <Button
           icon="pi pi-bars"
           aria-label="Menu Collapse"
-          className="bg-[#ffcb05] border-none"
+          className="bg-[#ffcb05] border-none text-white rounded-lg p-3"
           onClick={() => toggle()}
         />
       </div>
