@@ -5,7 +5,7 @@ import { Button } from "primereact/button"
 import { Column } from "primereact/column"
 import { DataTable } from "primereact/datatable"
 import { InputText } from "primereact/inputtext"
-import { useEffect, useState } from "react"
+import { ChangeEvent, useEffect, useState } from "react"
 
 export function CustomDataTable() {
   const [products, setProducts] = useState<ProductElement[]>([])
@@ -18,7 +18,7 @@ export function CustomDataTable() {
       .catch((error) => console.error("Error searching products:", error))
   }, [searchQuery])
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value)
   }
 
