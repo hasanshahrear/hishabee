@@ -49,7 +49,7 @@ export function PieChart() {
         options={chartOptions}
         pt={{
           root: {
-            className: "w-full max-h-[376px]",
+            className: "w-full max-h-[376px] flex items-center justify-center",
           },
         }}
       />

@@ -11,7 +11,7 @@ export function SidebarNavigation() {
 
   return (
     <div
-      className={`flex h-screen w-[230px] flex-col bg-[#ffcb05] text-black p-3 items-center pt-5 ${
+      className={`flex h-screen w-[230px] flex-col bg-[#ffcb05] text-black p-3 items-center pt-5 duration-1500 ease-linear transition-all  ${
         isToggled ? " absolute -left-80" : ""
       }`}
     >
