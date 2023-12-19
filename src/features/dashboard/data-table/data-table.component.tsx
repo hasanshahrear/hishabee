@@ -30,13 +30,13 @@ export function CustomDataTable() {
   }
 
   return (
-    <div className="shadow-xl p-8 rounded-lg bg-white">
+    <div className="shadow-xl p-5 md:p-8 rounded-lg bg-white">
       <div className="mb-4 gap-2 flex">
         <InputText
           placeholder="Search for products..."
           value={searchQuery}
           onChange={handleInputChange}
-          className="border text-black rounded-lg p-3"
+          className="border text-black rounded-lg p-3 max-w-[200px] md:max-w-lg"
         />
         <Button
           icon="pi pi-search"
